@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Until I See You Again ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Until I See You Again ❤️</h1>
+      <div class="journey" aria-hidden="true">
+        <div class="track left-track">
+          <div class="flag">🇺🇸</div>
+          <div class="line">
+            <div class="line-dotted"></div>
+            <div class="line-solid" id="line-left-solid"></div>
+            <div class="endpoint" id="endpoint-left" aria-hidden="true"></div>
+            <div class="plane" id="plane-left">
+              <span class="plane-emoji">✈️</span>
+              <span class="plane-label">Connor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="home" aria-hidden="true">🏠</div>
+
+        <div class="track right-track">
+          <div class="flag">🇨🇭</div>
+          <div class="line">
+            <div class="line-dotted"></div>
+            <div class="line-solid" id="line-right-solid"></div>
+            <div class="endpoint" id="endpoint-right" aria-hidden="true"></div>
+            <div class="plane" id="plane-right">
+              <span class="plane-emoji">✈️</span>
+              <span class="plane-label">Samantha</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="arrival-message" class="arrival-message" aria-live="polite">Welcome home Samantha!</div>
+
+      <section class="countdown" aria-label="Countdown timer">
+        <div class="time-box">
+          <span class="number" id="days">00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="time-box">
+          <span class="number" id="hours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="time-box">
+          <span class="number" id="minutes">00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="time-box">
+          <span class="number" id="seconds">00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </section>
+      
+      <section class="memories" aria-label="Our memories">
+        <div class="memory-header">
+          <h2>Our Memories</h2>
+          <div style="display:flex;gap:8px;align-items:center">
+            <button id="toggle-media-btn" type="button" class="memory-button" hidden>Show photo</button>
+            <button id="next-memory-btn" type="button" class="memory-button">Next</button>
+          </div>
+        </div>
+        <p id="memory-date-label" class="memory-date-label">Memory date</p>
+        <div class="memory-spot">
+          <img id="memory-image" class="memory-image" src="" alt="Memory photo" hidden />
+          <div class="memory-fallback" id="memory-fallback">
+            <p>Your photo, quote, or letter goes here.</p>
+          </div>
+        </div>
+        <p id="memory-caption" class="memory-caption">A memory will appear here</p>
+        <div class="memory-nav" aria-live="polite">
+          <span id="memory-counter">0 / 0</span>
+        </div>
+      </section>
+
+    <script>
+      // List of memory folders in the order they should rotate (newest → oldest)
+      const MEMORIES_FOLDERS = [
+        '2026-08-14','2026-08-13','2026-08-12','2026-08-11','2026-08-10','2026-08-09','2026-08-08','2026-08-07','2026-08-06','2026-08-05','2026-08-04','2026-08-03','2026-08-02','2026-07-22','2026-07-21','2026-07-20','2026-07-19','2026-07-17','2026-07-16','2026-07-15','2026-07-13','2026-07-12','2026-07-11'
+      ];
+    </script>
+
+    </main>
+    <canvas id="confetti-canvas"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>

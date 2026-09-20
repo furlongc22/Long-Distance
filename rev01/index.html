@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Until I See You Again ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Until I See You Again ❤️</h1>
+      <div class="journey" aria-hidden="true">
+        <div class="track left-track">
+          <div class="flag">🇺🇸</div>
+          <div class="line">
+            <div class="line-dotted"></div>
+            <div class="line-solid" id="line-left-solid"></div>
+            <div class="endpoint" id="endpoint-left" aria-hidden="true"></div>
+            <div class="plane" id="plane-left">
+              <span class="plane-emoji">✈️</span>
+              <span class="plane-label">Connor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="home" aria-hidden="true">🏠</div>
+
+        <div class="track right-track">
+          <div class="flag">🇨🇭</div>
+          <div class="line">
+            <div class="line-dotted"></div>
+            <div class="line-solid" id="line-right-solid"></div>
+            <div class="endpoint" id="endpoint-right" aria-hidden="true"></div>
+            <div class="plane" id="plane-right">
+              <span class="plane-emoji">✈️</span>
+              <span class="plane-label">Samantha</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="arrival-message" class="arrival-message" aria-live="polite">Welcome home Samantha!</div>
+
+      <section class="countdown" aria-label="Countdown timer">
+        <div class="time-box">
+          <span class="number" id="days">00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="time-box">
+          <span class="number" id="hours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="time-box">
+          <span class="number" id="minutes">00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="time-box">
+          <span class="number" id="seconds">00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </section>
+      
+      <section class="memories" aria-label="Our memories">
+        <h2>Our Memories</h2>
+        <p id="memory-caption">A memory will appear here</p>
+        <div class="memory-spot">
+          <p>Your photo, quote, or letter goes here.</p>
+        </div>
+      </section>
+
+    </main>
+    <canvas id="confetti-canvas"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
