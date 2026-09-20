@@ -215,6 +215,22 @@ footer {
 	.time-box { padding: 12px 14px; min-width: 72px; }
 	.number { font-size: 1.5rem; }
 	.container { padding: 20px; }
+
+	/* On small screens align content to top so header and counter aren't centered off-screen */
+	body {
+		align-items: flex-start;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
+	/* give the container a little breathing room from the top on phones */
+	.container { margin-top: 6px; }
+
+	/* make memory area slightly taller on phones to avoid internal scrolling */
+	.memory-spot {
+		min-height: 280px;
+		max-height: 72vh;
+	}
 }
 
 /* Journey graphic styles */
