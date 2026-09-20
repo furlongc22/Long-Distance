@@ -219,12 +219,12 @@ footer {
 	/* On small screens align content to top so header and counter aren't centered off-screen */
 	body {
 		align-items: flex-start;
-		padding-top: 20px;
+		padding-top: 60px;
 		padding-bottom: 40px;
 	}
 
 	/* give the container a little breathing room from the top on phones */
-	.container { margin-top: 6px; }
+	.container { margin-top: 24px; }
 
 	/* make memory area slightly taller on phones to avoid internal scrolling */
 	.memory-spot {
