@@ -12,7 +12,21 @@ const startDate = new Date('August 14, 2026 18:00:00').getTime();
 // If you want 2026-09-20 to start on July 12 instead, change FIRST_MEMORY_DATE to 2026-07-12.
 // Rotation settings: each memory shows for 4 days starting from page load date
 const WINDOW_DAYS = 4;
-const START_DATE = (function(){ const d=new Date(); d.setHours(0,0,0,0); return d; })();
+// Anchor the rotation to the release date so windows map predictably.
+// Set this to the release/anchor date you want (YYYY-MM-DDT00:00:00).
+const START_DATE = new Date('2026-09-20T00:00:00');
+
+// Temporary ordered overrides: map explicit date ranges to memory folders.
+// The first matching range (by order) will be used. Remove or edit these
+// entries when you want to return to the normal schedule.
+const TEMP_OVERRIDES = [
+	{ start: new Date('2026-09-28T00:00:00'), end: new Date('2026-10-01T23:59:59.999'), folder: '2026-08-13' },
+	{ start: new Date('2026-10-02T00:00:00'), end: new Date('2026-10-04T23:59:59.999'), folder: '2026-08-12' },
+	{ start: new Date('2026-10-05T00:00:00'), end: new Date('2026-10-07T23:59:59.999'), folder: '2026-08-11' },
+	{ start: new Date('2026-10-08T00:00:00'), end: new Date('2026-10-10T23:59:59.999'), folder: '2026-08-10' },
+	{ start: new Date('2026-10-11T00:00:00'), end: new Date('2026-10-13T23:59:59.999'), folder: '2026-08-09' },
+	{ start: new Date('2026-10-14T00:00:00'), end: new Date('2026-10-17T23:59:59.999'), folder: '2026-08-08' }
+];
 const DAY_IN_MS = 1000 * 60 * 60 * 24;
 
 // MEMORY ROTATION SETTINGS
@@ -36,6 +50,20 @@ function addDebug(msg) { /* no-op */ }
 
 // --- New rotation logic using MEMORIES_FOLDERS (global) ---
 function getMemoryDateKeyForToday(referenceDate = new Date()) {
+	// If a temporary ordered override is active, return the matching folder
+	try {
+		if (typeof TEMP_OVERRIDES !== 'undefined' && Array.isArray(TEMP_OVERRIDES)) {
+			const ref = new Date(referenceDate);
+			for (const o of TEMP_OVERRIDES) {
+				try {
+					if (!o || !o.start || !o.end || !o.folder) continue;
+					const s = new Date(o.start);
+					const e = new Date(o.end);
+					if (ref >= s && ref <= e) return o.folder;
+				} catch (inner) { continue; }
+			}
+		}
+	} catch (e) { /* ignore override errors and fall back */ }
 	// MEMORIES_FOLDERS may be declared with const/let in an inline script (not a property on window).
 	const list = (typeof MEMORIES_FOLDERS !== 'undefined') ? MEMORIES_FOLDERS : (window.MEMORIES_FOLDERS || []);
 	if (!list || !list.length) {
