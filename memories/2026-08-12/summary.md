@@ -1,9 +1,3 @@
-# Summary for 2026-08-12
+# Wednesday, 08-12-2026
 
-Write a short (1–3 sentence) summary of this memory. Include a highlight or two and any small context you want shown in the release page.
-
-- Highlight 1:
-- Highlight 2:
-
-Optional notes:
-
+That Wednesday night really started making everything set in that you would actually be moving away in just a few short days. I was so happy that I could help support the packing process! This was a very special night as we did so many fun things, our Chick-fil-A dinner, going on a target run for some Legos, and building our plants together, while watching a great episode of Ted Lasso. I also really appreciated the Cheesecake you introduced to me (It's amazing). I also was so glad I got to stay the night with you, and sharing that twin bed was amazing since I got to be even closer to you. I really love you so much and I’m so thankful to be able to look back at memories like this!!

@@ -31,8 +31,8 @@ const DAY_IN_MS = 1000 * 60 * 60 * 24;
 
 // MEMORY ROTATION SETTINGS
 // Change this to how long each memory stays on screen before auto-rotating.
-// Set to 90 for a 90-second rotation, or set to a very large number to effectively disable.
-const AUTO_ROTATE_SECONDS = 90;
+// Set to 10 for a 10-second rotation, or adjust it to a different value as needed.
+const AUTO_ROTATE_SECONDS = 10;
 
 // IMPORTANT:
 // This page looks for photo data in memories.json, which is generated from the files in the memories folder.
