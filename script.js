@@ -20,12 +20,11 @@ const START_DATE = new Date('2026-09-20T00:00:00');
 // The first matching range (by order) will be used. Remove or edit these
 // entries when you want to return to the normal schedule.
 const TEMP_OVERRIDES = [
-	{ start: new Date('2026-09-28T00:00:00'), end: new Date('2026-10-01T23:59:59.999'), folder: '2026-08-13' },
-	{ start: new Date('2026-10-02T00:00:00'), end: new Date('2026-10-04T23:59:59.999'), folder: '2026-08-12' },
-	{ start: new Date('2026-10-05T00:00:00'), end: new Date('2026-10-07T23:59:59.999'), folder: '2026-08-11' },
-	{ start: new Date('2026-10-08T00:00:00'), end: new Date('2026-10-10T23:59:59.999'), folder: '2026-08-10' },
-	{ start: new Date('2026-10-11T00:00:00'), end: new Date('2026-10-13T23:59:59.999'), folder: '2026-08-09' },
-	{ start: new Date('2026-10-14T00:00:00'), end: new Date('2026-10-17T23:59:59.999'), folder: '2026-08-08' }
+	{ start: new Date('2026-10-05T00:00:00'), end: new Date('2026-10-06T23:59:59.999'), folder: '2026-08-12' },
+	{ start: new Date('2026-10-07T00:00:00'), end: new Date('2026-10-08T23:59:59.999'), folder: '2026-08-11' },
+	{ start: new Date('2026-10-09T00:00:00'), end: new Date('2026-10-11T23:59:59.999'), folder: '2026-08-10' },
+	{ start: new Date('2026-10-12T00:00:00'), end: new Date('2026-10-14T23:59:59.999'), folder: '2026-08-09' },
+	{ start: new Date('2026-10-15T00:00:00'), end: new Date('2026-10-17T23:59:59.999'), folder: '2026-08-08' }
 ];
 const DAY_IN_MS = 1000 * 60 * 60 * 24;
 
