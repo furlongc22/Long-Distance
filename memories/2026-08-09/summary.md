@@ -1,9 +1,3 @@
-# Summary for 2026-08-09
+# Sunday 08-09-2026
 
-Write a short (1–3 sentence) summary of this memory. Include a highlight or two and any small context you want shown in the release page.
-
-- Highlight 1:
-- Highlight 2:
-
-Optional notes:
-
+This was such a memorable day. We struggled to find breakfast, but we didn't let that stop us. Good things come to those who wait and Yokum's really made that come true. Our protein milks, really powered us all day on the coolest and longest via ferrata I've ever done. I'm so glad I got to introduce this to you and it was a highlight of the trip for me. While we have lots of pictures to remember the climb/ hike, there is fewer pictures of some of the most iconic memories. Our salad we split for dinner while playing yatz, our ice cream cookie sandwich comparison which led us to grabbing a second chocolate chip cookie one, and just spending amazing time together the entire car ride. We were so lucky to avoid the storms till the very last part of the drive which we didn't let it stop us. I'm so excited for more trips like this and one day, for weekends like this to be the standard. I love you so much 
