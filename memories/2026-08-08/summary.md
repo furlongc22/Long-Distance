@@ -1,9 +1,3 @@
-# Summary for 2026-08-08
+# Sunday 08-08-2026
 
-Write a short (1–3 sentence) summary of this memory. Include a highlight or two and any small context you want shown in the release page.
-
-- Highlight 1:
-- Highlight 2:
-
-Optional notes:
-
+My Birthday! I couldn't have asked for a better birthday. I hope you know how special you made this day and I think back to it all the time. From the little things, like m&m's at midnight, to waking up next to you, to going to New River Gorge and you getting me an awesome color changing mug. This day had so many core memories, like the wee wee wiggles, our spot on the waterfall, walking under the bridge, and confirming the endless wall trail was indeed an endless wall and a trail. The Walmart subway parking lot sunset and that very entertaining subway employee trying to figure out if we had enough mayo on our sandwiches. We didn't let the potential road closure stop us and we made to the massive town of Whitmer WV. Stargazing was stunning there and our national parks monopoly game was the best. I really appreciate you making this day so special for me, I love you so much
